@@ -15,9 +15,9 @@ const Ball = (props) => {
 	const decal = useTexture(props.imgUrl);
 	return (
 		<Float
-			speed={2.5}
-			rotationIntensity={1}
-			floatIntensity={2}
+			speed={5}
+			rotationIntensity={2}
+			floatIntensity={3}
 			// floatingRange={[1, 1]}
 		>
 			<ambientLight intensity={0.2} />
@@ -41,12 +41,15 @@ const Ball = (props) => {
 };
 
 const BallCanvas = (icon) => {
-	const [rerender, setrerender] = useState(false);
-	console.log(rerender);
 	return (
-		<Canvas onClick={() => setrerender(!rerender)}>
+		<Canvas>
 			<Suspense fallback={<CanvasLoader />}>
-				<OrbitControls enableZoom={false} />
+				<OrbitControls
+					maxAzimuthAngle={Math.PI / 7}
+					minAzimuthAngle={-Math.PI / 7}
+					minPolarAngle={Math.PI / 2}
+					enableZoom={false}
+				/>
 				<Ball imgUrl={icon} />
 			</Suspense>
 
