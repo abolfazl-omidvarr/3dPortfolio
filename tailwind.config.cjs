@@ -3,7 +3,13 @@ module.exports = {
 	content: ["./src/**/*.{js,jsx}"],
 	mode: "jit",
 	theme: {
+		fontFamily: {
+			welcomeText: ["Sofia Sans Extra Condensed"],
+		},
 		extend: {
+			gridTemplateColumns: {
+				c2: "4fr 3fr",
+			},
 			colors: {
 				primary: "#050816",
 				secondary: "#aaa6c3",
@@ -20,6 +26,8 @@ module.exports = {
 			},
 			backgroundImage: {
 				"hero-pattern": "url('/src/assets/herobg.svg')",
+				"wave-line": "url('/src/assets/waveLine.svg')",
+				"wave-stack": "url('/src/assets/waveStack.svg')",
 			},
 		},
 	},
