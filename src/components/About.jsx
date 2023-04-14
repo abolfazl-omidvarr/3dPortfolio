@@ -43,7 +43,7 @@ const About = () => {
 				head={"Overview"}
 				sub={"Introduction"}
 				desc={
-					"I'm a skilled software developer with experience in TypeScript and JavaScript, and expertise in frameworks like React, Node.js, and Three.js. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!"
+					"Hey there, I'm a junior web developer who loves creating awesome web applications. I'm passionate about both front-end and back-end development, and enjoy building user-friendly interfaces with HTML, CSS, and JavaScript, as well as optimizing server-side logic with technologies like Node.js, Express, and MongoDB. I'm always eager to learn and collaborate, and believe that the best ideas come from working together. When I'm not coding, you can find me tinkering with new frameworks, contributing to open-source projects, and keeping up with the latest tech trends. Let's work together to bring your web app to life - I can't wait to get started!"
 				}
 			/>
 

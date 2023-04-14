@@ -81,23 +81,30 @@ const App = () => {
 					<Navbar />
 					<Hero />
 				</div>
-				<div className="relative">
-					<img src={waveLine} className="absolute -z-10  w-full h-full" />
-					<About />
-				</div>
-				<div className="relative">
-					<img src={waveStack} className="absolute -z-10  w-full h-full" />
-					<Experience />
-				</div>
-				<div className="relative">
-					<img src={mountainStack} className="absolute -z-10  w-full h-full" />
-					<Tech />
-					<Works />
-				</div>
-				<div className="relative z-0 bg-gradient-to-b from-[#0a050b] from-[0%] to-[#000]">
-					<Contact />
-					<StarsCanvas />
-				</div>
+				{!loading && (
+					<>
+						<div className="relative">
+							<img src={waveLine} className="absolute -z-10  w-full h-full" />
+							<About />
+						</div>
+						<div className="relative">
+							<img src={waveStack} className="absolute -z-10  w-full h-full" />
+							<Experience />
+						</div>
+						<div className="relative">
+							<img
+								src={mountainStack}
+								className="absolute -z-10  w-full h-full"
+							/>
+							<Tech />
+							<Works />
+						</div>
+						<div className="relative z-0 bg-gradient-to-b from-[#0a050b] from-[0%] to-[#000]">
+							<Contact />
+							<StarsCanvas />
+						</div>
+					</>
+				)}
 			</div>
 		</BrowserRouter>
 	);

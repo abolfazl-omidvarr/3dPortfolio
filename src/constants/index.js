@@ -15,14 +15,17 @@ import {
 	git,
 	figma,
 	docker,
-	meta,
-	starbucks,
-	tesla,
-	shopify,
-	carrent,
-	jobit,
-	tripguide,
 	threejs,
+	selfStudy,
+	mci,
+	quera,
+	bankistApp,
+	bankistWeb,
+	colorPallet,
+	mapty,
+	spaceTour,
+	sneakers,
+	placeHolder,
 } from "../assets";
 
 export const navLinks = [
@@ -46,11 +49,11 @@ const services = [
 		icon: web,
 	},
 	{
-		title: "React Native Developer",
+		title: "React Developer",
 		icon: mobile,
 	},
 	{
-		title: "Backend Developer",
+		title: "Backend enthusiast",
 		icon: backend,
 	},
 	{
@@ -73,16 +76,8 @@ const technologies = [
 		icon: javascript,
 	},
 	{
-		name: "TypeScript",
-		icon: typescript,
-	},
-	{
 		name: "React JS",
 		icon: reactjs,
-	},
-	{
-		name: "Redux Toolkit",
-		icon: redux,
 	},
 	{
 		name: "Tailwind CSS",
@@ -92,292 +87,186 @@ const technologies = [
 		name: "Node JS",
 		icon: nodejs,
 	},
-	{
-		name: "MongoDB",
-		icon: mongodb,
-	},
-	{
-		name: "git",
-		icon: git,
-	},
-	{
-		name: "figma",
-		icon: figma,
-	},
 ];
 
 const experiences = [
 	{
-		title: "React.js Developer",
-		company_name: "Starbucks",
-		icon: starbucks,
-		iconBg: "#383E56",
-		date: "March 2020 - April 2021",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
-	},
-	{
-		title: "React Native Developer",
-		company_name: "Tesla",
-		icon: tesla,
+		title: "Self Study",
+		// company_name: "Starbucks",
+		icon: selfStudy,
 		iconBg: "#E6DEDD",
-		date: "Jan 2021 - Feb 2022",
+		date: "March 2020 - Now",
 		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
+			"Self-study learning as a web developer allows me to learn the latest technologies and programming languages, such as HTML, CSS, JavaScript, and React, at my own pace and convenience.",
+			"provides me with access to a wide range of online resources, including tutorials, video courses, and code libraries, which are often more affordable than traditional education.",
+			"enables me to work on personal projects, such as building websites and applications, which not only reinforces my knowledge but also allows me to build a portfolio of work to showcase to potential employers.",
+			"allows me to experiment and take risks without the pressure of deadlines or grades, which fosters creativity and innovation in my work.",
 		],
 	},
-	{
-		title: "Web Developer",
-		company_name: "Shopify",
-		icon: shopify,
-		iconBg: "#383E56",
-		date: "Jan 2022 - Jan 2023",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
-	},
-	{
-		title: "Full stack Developer",
-		company_name: "Meta",
-		icon: meta,
-		iconBg: "#E6DEDD",
-		date: "Jan 2023 - Present",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
-	},
-];
 
-const testimonials = [
 	{
-		testimonial:
-			"I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-		name: "Sara Lee",
-		designation: "CFO",
-		company: "Acme Co",
-		image: "https://randomuser.me/api/portraits/women/4.jpg",
+		title: "MCI voluntary development",
+		company_name: "MCI",
+		icon: mci,
+		iconBg: "#E6DEDD",
+		date: "January 2022 - February 2023",
+		points: [
+			"Developing and maintaining web applications using React.js and other related technologies.",
+			"Contributing to a big web development project as a volunteer allows me to gain valuable real-world experience working with other professionals in the field.",
+			"provides me with an opportunity to work on a project that aligns with my interests and passions, while also making a meaningful impact in the community.",
+			"Working on a big project as a volunteer allows me to build my portfolio and demonstrate my skills to potential employers, which can increase my job prospects in the future.",
+		],
 	},
 	{
-		testimonial:
-			"I've never met a web developer who truly cares about their clients' success like Rick does.",
-		name: "Chris Brown",
-		designation: "COO",
-		company: "DEF Corp",
-		image: "https://randomuser.me/api/portraits/men/5.jpg",
-	},
-	{
-		testimonial:
-			"After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-		name: "Lisa Wang",
-		designation: "CTO",
-		company: "456 Enterprises",
-		image: "https://randomuser.me/api/portraits/women/6.jpg",
+		title: "Quera Front-End bootcamp",
+		company_name: "Quera",
+		icon: queras,
+		iconBg: "#E6DEDD",
+		date: "March 2023 - Now",
+		points: [
+			"Attending a web development bootcamp allows me to immerse myself in a comprehensive learning experience that covers a wide range of web development topics.",
+			"Participating in a bootcamp provides me with structured learning opportunities, as well as access to experienced instructors who can offer guidance and feedback on my work.",
+			"Attending a bootcamp allows me to develop valuable technical and soft skills that are highly valued in the web development industry, such as coding proficiency, project management, and teamwork.",
+			"helping me to develop strong teamwork skills, as I have had the opportunity to collaborate with other participants on projects and assignments, which has allowed me to learn from others and build my interpersonal skills.",
+		],
 	},
 ];
 
 const projects = [
 	{
-		name: "Car Rent",
+		name: "Color Pallet",
 		description:
-			"Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+			"a beautiful color pallet creator that helps designers to create their own pallets and save their favorite colors",
 		tags: [
 			{
-				name: "react",
+				name: "HTML",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "mongodb",
+				name: "JSS",
+				color: "pink-text-gradient ",
+			},
+			{
+				name: "React.js",
 				color: "green-text-gradient",
 			},
 			{
-				name: "tailwind",
-				color: "pink-text-gradient",
+				name: "React-Router",
+				color: "",
 			},
 		],
-		image: carrent,
-		source_code_link: "https://github.com/",
+		image: colorPallet,
+		source: "https://colorpallet.netlify.app",
+		visit: "https://colorpallet.netlify.app",
 	},
 	{
-		name: "Job IT",
+		name: "MAPTY",
 		description:
-			"Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+			"this little web application helps and keep track of distances you ran or cycled. it will come in handy",
 		tags: [
 			{
-				name: "react",
+				name: "HTML",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "restapi",
-				color: "green-text-gradient",
+				name: "CSS",
+				color: "pink-text-gradient ",
 			},
 			{
-				name: "scss",
-				color: "pink-text-gradient",
+				name: "Vanilla JS",
+				color: "green-text-gradient",
 			},
 		],
-		image: jobit,
-		source_code_link: "https://github.com/",
+		image: mapty,
+		source: "https://mapty-responsive.netlify.app",
+		visit: "https://mapty-responsive.netlify.app",
 	},
 	{
-		name: "Trip Guide",
+		name: "Space Tourism",
 		description:
-			"A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+			"an elegant multi-page space website. are you ready to explore our solar system? fasten your seatbelt then",
 		tags: [
 			{
-				name: "nextjs",
+				name: "HTML",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "supabase",
-				color: "green-text-gradient",
+				name: "CSS",
+				color: "pink-text-gradient ",
 			},
 			{
-				name: "css",
-				color: "pink-text-gradient",
+				name: "Vanilla JS",
+				color: "green-text-gradient",
 			},
 		],
-		image: tripguide,
-		source_code_link: "https://github.com/",
+		image: spaceTour,
+		source: "https://mapty-responsive.netlify.app",
+		visit: "https://mapty-responsive.netlify.app",
 	},
 	{
-		name: "Car Rent",
+		name: "Bankist App",
 		description:
-			"Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+			"did you register to bankist? keep track of your expenses and pay up your loan. come have a look arround.",
 		tags: [
 			{
-				name: "react",
+				name: "HTML",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "mongodb",
-				color: "green-text-gradient",
+				name: "CSS",
+				color: "pink-text-gradient ",
 			},
 			{
-				name: "tailwind",
-				color: "pink-text-gradient",
+				name: "Vanilla JS",
+				color: "green-text-gradient",
 			},
 		],
-		image: carrent,
-		source_code_link: "https://github.com/",
+		image: bankistApp,
+		source_code_link: "",
 	},
 	{
-		name: "Job IT",
+		name: "Bankist Landing Page",
 		description:
-			"Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+			"are you looking for a reliable and modern banking system? have a look at our web page. you will not regret it",
 		tags: [
 			{
-				name: "react",
+				name: "HTML",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "restapi",
-				color: "green-text-gradient",
+				name: "CSS",
+				color: "pink-text-gradient ",
 			},
 			{
-				name: "scss",
-				color: "pink-text-gradient",
+				name: "Vanilla JS",
+				color: "green-text-gradient",
 			},
 		],
-		image: jobit,
-		source_code_link: "https://github.com/",
+		image: bankistWeb,
+		source_code_link: "",
 	},
 	{
-		name: "Trip Guide",
+		name: "eCommerce single page",
 		description:
-			"A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+			"are you tired of looking for sneakers? try this one. sure it fits you perfectly and comes with a reasonable price.",
 		tags: [
 			{
-				name: "nextjs",
+				name: "HTML",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "supabase",
+				name: "CSS",
+				color: "pink-text-gradient ",
+			},
+			{
+				name: "Vanilla JS",
 				color: "green-text-gradient",
 			},
-			{
-				name: "css",
-				color: "pink-text-gradient",
-			},
 		],
-		image: tripguide,
-		source_code_link: "https://github.com/",
-	},
-	{
-		name: "Car Rent",
-		description:
-			"Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-		tags: [
-			{
-				name: "react",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "mongodb",
-				color: "green-text-gradient",
-			},
-			{
-				name: "tailwind",
-				color: "pink-text-gradient",
-			},
-		],
-		image: carrent,
-		source_code_link: "https://github.com/",
-	},
-	{
-		name: "Job IT",
-		description:
-			"Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-		tags: [
-			{
-				name: "react",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "restapi",
-				color: "green-text-gradient",
-			},
-			{
-				name: "scss",
-				color: "pink-text-gradient",
-			},
-		],
-		image: jobit,
-		source_code_link: "https://github.com/",
-	},
-	{
-		name: "Trip Guide",
-		description:
-			"A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-		tags: [
-			{
-				name: "nextjs",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "supabase",
-				color: "green-text-gradient",
-			},
-			{
-				name: "css",
-				color: "pink-text-gradient",
-			},
-		],
-		image: tripguide,
-		source_code_link: "https://github.com/",
+		image: sneakers,
+		source: "https://ecommerce-omidvar.netlify.app",
+		visit: "https://ecommerce-omidvar.netlify.app",
 	},
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

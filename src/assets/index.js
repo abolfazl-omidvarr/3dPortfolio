@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import redirect from "./redirect.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -22,14 +23,17 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import avatar from "./avatar.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import selfStudy from "./selfStudy.png";
+import mci from "./mci.png";
+import quera from "./quera.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import bankistApp from "./projects/bankistApp.png";
+import bankistWeb from "./projects/bankistWeb.png";
+import colorPallet from "./projects/colorPallet.png";
+import mapty from "./projects/mapty.png";
+import spaceTour from "./projects/spaceT.png";
+import sneakers from "./projects/sneakers.png";
+import placeHolder from "./projects/placeHolder.jpg";
 
 import waveStack from "./waveStack.svg";
 import mountainStack from "./mountainStacked.svg";
@@ -42,6 +46,7 @@ export {
 	mobile,
 	web,
 	github,
+	redirect,
 	menu,
 	close,
 	css,
@@ -57,15 +62,18 @@ export {
 	tailwind,
 	typescript,
 	threejs,
-	meta,
-	shopify,
-	starbucks,
-	tesla,
-	carrent,
-	jobit,
-	tripguide,
 	avatar,
 	waveStack,
 	mountainStack,
 	waveLine,
+	bankistApp,
+	bankistWeb,
+	colorPallet,
+	mapty,
+	spaceTour,
+	sneakers,
+	placeHolder,
+	selfStudy,
+	mci,
+	quera,
 };

@@ -3,13 +3,11 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination } from "swiper";
-import { TypeAnimation } from "react-type-animation";
 
-import { styles } from "../styles";
-import { github } from "../assets";
+import { github, redirect } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn } from "../utils/motion";
 import { Header } from "../components";
 
 const ProjectCard = ({
@@ -78,7 +76,7 @@ const Works = () => {
 				head={"Projects."}
 				sub={"My Works"}
 				desc={
-					"Following projects showcases my skills and experience through real-world examples of my work. Each project briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively."
+					"Looking for inspiration? You've come to the right place! My project showcase is a testament to my passion for creating unique and functional designs. From sleek and modern websites to intuitive mobile apps, my work is built to stand out in today's crowded digital landscape. So take a moment to explore my portfolio, and see for yourself why I'm the right choice for your next project. Let's collaborate and bring your vision to life!"
 				}
 			/>
 			<Swiper
@@ -98,7 +96,7 @@ const Works = () => {
 				className="mySwiper"
 			>
 				{projects.map((project, i) => {
-					const { image, tags, source_code_link, description } = project;
+					const { image, tags, source_code_link, description, visit } = project;
 					return (
 						<SwiperSlide key={"SwiperSlide" + i}>
 							<div className="bg-tertiary p-5 rounded-2xl w-full h-full">
@@ -108,7 +106,6 @@ const Works = () => {
 										alt="project_image"
 										className="w-full h-full object-cover rounded-2xl"
 									/>
-
 									<div className="absolute inset-0 flex justify-end m-3 card-img_hover">
 										<div
 											onClick={() => window.open(source_code_link, "_blank")}
@@ -116,6 +113,18 @@ const Works = () => {
 										>
 											<img
 												src={github}
+												alt="source code"
+												className="w-1/2 h-1/2 object-contain"
+											/>
+										</div>
+									</div>
+									<div className="absolute inset-0 top-12 flex justify-end m-3 card-img_hover">
+										<div
+											onClick={() => window.open(visit, "_blank")}
+											className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+										>
+											<img
+												src={redirect}
 												alt="source code"
 												className="w-1/2 h-1/2 object-contain"
 											/>
@@ -145,11 +154,6 @@ const Works = () => {
 					);
 				})}
 			</Swiper>
-			{/* <div className="mt-20 flex flex-wrap gap-7">
-				{projects.map((project, index) => (
-					<ProjectCard key={`project-${index}`} index={index} {...project} />
-				))}
-			</div> */}
 		</>
 	);
 };

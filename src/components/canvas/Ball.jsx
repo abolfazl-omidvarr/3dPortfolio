@@ -15,15 +15,15 @@ const Ball = (props) => {
 	const decal = useTexture(props.imgUrl);
 	return (
 		<Float
-			speed={5}
-			rotationIntensity={2}
-			floatIntensity={3}
+			speed={2}
+			rotationIntensity={1}
+			floatIntensity={1}
 			// floatingRange={[1, 1]}
 		>
-			<ambientLight intensity={0.2} />
+			<ambientLight intensity={0} />
 			<directionalLight position={[0, 0, 1]} />
 			<mesh castShadow receiveShadow scale={2.75}>
-				<icosahedronGeometry args={[1, 1]} />
+				<icosahedronGeometry args={[1, 2]} />
 				<meshStandardMaterial
 					color="#625e75"
 					polygonOffset
@@ -48,6 +48,7 @@ const BallCanvas = (icon) => {
 					maxAzimuthAngle={Math.PI / 7}
 					minAzimuthAngle={-Math.PI / 7}
 					minPolarAngle={Math.PI / 2}
+					maxPolarAngle={Math.PI / 2}
 					enableZoom={false}
 				/>
 				<Ball imgUrl={icon} />

@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
 
 import { avatar } from "../assets";
 import Tilt from "react-parallax-tilt";
@@ -29,7 +28,7 @@ const Hero = () => {
 					<h1 className={`${styles.heroHeadText} text-white`}>
 						Hi, I'm{" "}
 						<TypeAnimation
-							sequence={["", 2000, "Abolfazl"]}
+							sequence={["", 3500, "Abolfazl"]}
 							wrapper="span"
 							cursor={false}
 							repeat={0}
@@ -48,7 +47,7 @@ const Hero = () => {
 					<TypeAnimation
 						sequence={[
 							"",
-							2000,
+							4000,
 							"Let's work together to bring your ideas to life!",
 						]}
 						wrapper="span"
@@ -66,7 +65,11 @@ const Hero = () => {
 				transition={{ delay: 3 }}
 				className="w-full "
 			>
-				<Tilt className="max-w-xs md:max-w-[85%] m-auto ">
+				<Tilt
+					tiltMaxAngleX={1}
+					tiltMaxAngleY={1}
+					className="max-w-xs md:max-w-[85%] m-auto "
+				>
 					<img src={avatar} alt="avatar" />
 				</Tilt>
 			</motion.figure>
