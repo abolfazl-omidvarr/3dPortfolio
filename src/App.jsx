@@ -18,42 +18,40 @@ import {
 import { waveStack, mountainStack, waveLine } from "./assets";
 
 const App = () => {
-	const [loading, setLoading] = useState(true);
+	const [loading, setLoading] = useState(false);
 	const loadingRef = useRef();
-	const mainRef = useRef();
 
 	useEffect(() => {
-		setTimeout(() => {
-			// mainRef.current.style.overflow = "auto";
-			// mainRef.current.style.height = "auto";
+		if (!loading) {
 			setTimeout(() => {
-				loadingRef.current.style.display = "none";
-			}, 1000);
-		}, 2500);
+				loadingRef.current.style.opacity = "0";
+				setTimeout(() => {
+					loadingRef.current.style.display = "none";
+				}, 500);
+			}, 1500);
+		}
 	}, [loading]);
 
-	useEffect(() => {
-		document.onreadystatechange = function () {
-			if (document.readyState == "complete") {
-				setTimeout(() => {
-					setLoading(false);
-				}, 1000);
-			}
-		};
-	}, []);
+	// useEffect(() => {
+	// 	document.onreadystatechange = function () {
+	// 		if (document.readyState == "complete") {
+	// 			console.log("done");
+	// 			setTimeout(() => {
+	// 				setLoading(false);
+	// 			}, 1500);
+	// 		}
+	// 	};
+	// }, []);
 	return (
 		<BrowserRouter>
-			<div
-				// ref={mainRef}
-				className="relative z-0 bg-[#2c1135] h-screen overflow-x-hidden"
-			>
+			<div className="relative z-0 bg-[#2c1135] h-screen overflow-x-hidden">
 				<div className="relative bg-hero-pattern bg-cover bg-no-repeat bg-bottom">
 					<motion.div
 						ref={loadingRef}
-						initial={{ opacity: 1 }}
-						animate={{ opacity: 0 }}
-						transition={{ delay: 2.5 }}
-						className={`absolute w-screen h-screen z-30 grid justify-center items-center backdrop-blur-2xl`}
+						// initial={{ opacity: 1 }}
+						// animate={{ opacity: 0 }}
+						// transition={{ delay: 3.5 }}
+						className={`absolute w-screen h-screen z-30 grid justify-center items-center backdrop-blur-2xl opacity-100 ease-out duration-300`}
 					>
 						{loading ? (
 							<div className="lds-roller">
@@ -81,28 +79,30 @@ const App = () => {
 					<Navbar />
 					<Hero />
 				</div>
-				<div style={{ display: loading ? "none" : "block" }}>
-					<div className="relative">
-						<img src={waveLine} className="absolute -z-10  w-full h-full" />
-						<About />
-					</div>
-					<div className="relative">
-						<img src={waveStack} className="absolute -z-10  w-full h-full" />
-						<Experience />
-					</div>
-					<div className="relative">
-						<img
-							src={mountainStack}
-							className="absolute -z-10  w-full h-full"
-						/>
-						<Tech />
-						<Works />
-					</div>
-					<div className="relative z-0 bg-gradient-to-b from-[#0a050b] from-[0%] to-[#000]">
-						<Contact />
-						<StarsCanvas />
-					</div>
-				</div>
+				{!loading ? (
+					<>
+						<div className="relative">
+							<img src={waveLine} className="absolute -z-10  w-full h-full" />
+							<About />
+						</div>
+						<div className="relative">
+							<img src={waveStack} className="absolute -z-10  w-full h-full" />
+							<Experience />
+						</div>
+						<div className="relative">
+							<img
+								src={mountainStack}
+								className="absolute -z-10  w-full h-full"
+							/>
+							<Tech />
+							<Works />
+						</div>
+						<div className="relative z-0 bg-gradient-to-b from-[#0a050b] from-[0%] to-[#000]">
+							<Contact />
+							<StarsCanvas />
+						</div>
+					</>
+				) : null}
 			</div>
 		</BrowserRouter>
 	);
