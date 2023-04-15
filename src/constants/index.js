@@ -120,7 +120,7 @@ const experiences = [
 	{
 		title: "Quera Front-End bootcamp",
 		company_name: "Quera",
-		icon: queras,
+		icon: quera,
 		iconBg: "#E6DEDD",
 		date: "March 2023 - Now",
 		points: [

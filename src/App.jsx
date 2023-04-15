@@ -24,8 +24,8 @@ const App = () => {
 
 	useEffect(() => {
 		setTimeout(() => {
-			mainRef.current.style.overflow = "auto";
-			mainRef.current.style.height = "auto";
+			// mainRef.current.style.overflow = "auto";
+			// mainRef.current.style.height = "auto";
 			setTimeout(() => {
 				loadingRef.current.style.display = "none";
 			}, 1000);
@@ -44,8 +44,8 @@ const App = () => {
 	return (
 		<BrowserRouter>
 			<div
-				ref={mainRef}
-				className="relative z-0 bg-[#2c1135] h-screen overflow-hidden"
+				// ref={mainRef}
+				className="relative z-0 bg-[#2c1135] h-screen overflow-x-hidden"
 			>
 				<div className="relative bg-hero-pattern bg-cover bg-no-repeat bg-bottom">
 					<motion.div
@@ -81,30 +81,28 @@ const App = () => {
 					<Navbar />
 					<Hero />
 				</div>
-				{!loading && (
-					<>
-						<div className="relative">
-							<img src={waveLine} className="absolute -z-10  w-full h-full" />
-							<About />
-						</div>
-						<div className="relative">
-							<img src={waveStack} className="absolute -z-10  w-full h-full" />
-							<Experience />
-						</div>
-						<div className="relative">
-							<img
-								src={mountainStack}
-								className="absolute -z-10  w-full h-full"
-							/>
-							<Tech />
-							<Works />
-						</div>
-						<div className="relative z-0 bg-gradient-to-b from-[#0a050b] from-[0%] to-[#000]">
-							<Contact />
-							<StarsCanvas />
-						</div>
-					</>
-				)}
+				<div style={{ display: loading ? "none" : "block" }}>
+					<div className="relative">
+						<img src={waveLine} className="absolute -z-10  w-full h-full" />
+						<About />
+					</div>
+					<div className="relative">
+						<img src={waveStack} className="absolute -z-10  w-full h-full" />
+						<Experience />
+					</div>
+					<div className="relative">
+						<img
+							src={mountainStack}
+							className="absolute -z-10  w-full h-full"
+						/>
+						<Tech />
+						<Works />
+					</div>
+					<div className="relative z-0 bg-gradient-to-b from-[#0a050b] from-[0%] to-[#000]">
+						<Contact />
+						<StarsCanvas />
+					</div>
+				</div>
 			</div>
 		</BrowserRouter>
 	);
